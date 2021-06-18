@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #ccc;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 15px 2%;
+    background-color: seagreen;
+    color: white;
+    height: 80px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header .container ul li {
+    margin: 0 20px;
+}
+
+header .container ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header .container ul li a:hover {
+    color: rgb(214, 214, 214);
+}
+
+main {
+    height: calc(100% - 80px); /* Subtracting by the header's height to prevent page overflowing. */
+}
+
+main .form-area {
+    width: 95%;
+    max-width: 800px;
+    padding: 30px 2%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+main .form-area .input-wraper {
+    margin: 10px 0;
+}
+
+main .form-area input[type=text], main .form-area input[type=password] {
+    outline: 0;
+    padding-left: 5px;
+    border: 1px solid black;
+    height: 30px;
+    line-height: 30px;
+}
+
+main .form-area input[type=submit] {
+    margin-top: 15px;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    outline: 0;
+    color: white;
+    font-size: 20px;
+    background-color: seagreen;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
