@@ -8,7 +8,7 @@ const userSchema = mongoose.Schema({
     password: requiredString,
     registered_date: requiredString,
     logins_amount: Number,
-    logins_date: [ String ]
+    login_dates: [ String ]
 })
 
 module.exports = mongoose.model('users', userSchema)
